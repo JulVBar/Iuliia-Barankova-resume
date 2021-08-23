@@ -21,7 +21,7 @@ const path = {
     src: {
         css:    cssPath + "style.css",
     },
-}
+};
 
 
 
