@@ -9,15 +9,15 @@
 }
 
 .main {
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .container {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: rgb(180, 177, 177);
+    padding: 50px;
+    background-color: #fff;
+    border: 1px solid rgb(235, 235, 235);
 }
 
 
@@ -25,7 +25,7 @@
     font-size: 50px;
     letter-spacing: 2.5px;
     padding: 15px 5px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1.5px solid rgb(209, 207, 207);
 }
 
 .prof__title {
@@ -33,7 +33,7 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     padding: 10px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1.5px solid rgb(209, 207, 207);
 }
 
 .content__block {
@@ -68,18 +68,21 @@
 
 .item__header {
     display: flex;
+    align-items: center;
     padding: 10px;
     margin: 20px 0;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(209, 207, 207);
 }
 
 .item__header-icon {
-    font-size: 30px;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.753);
 }
 
 .item__header-title {
     font-size: 30px;
     padding-left: 15px;
+    color: rgba(0, 0, 0, 0.753);
 }
 
 
@@ -96,6 +99,8 @@
     cursor: pointer;
     color: blue;
     transition: all .2s ease;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .item__link:hover {
@@ -108,17 +113,17 @@
 }
 
 .contact__item {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .contact__link {
-    color: black;
+    color: rgba(0, 0, 0, 0.753);
     text-decoration: none;
 }
 
 .contact__link--flex {
     display: flex;
-    color: black;
+    color: rgba(0, 0, 0, 0.753);
     text-decoration: none;
     margin: 10px 0;
 }
@@ -126,6 +131,6 @@
 .contact__icon {
     color: black;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     padding: 0 5px;
 }
