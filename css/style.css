@@ -4,12 +4,11 @@
     min-height: 100vh;
     display: -ms-flexbox;
     display: flex;
-    
     justify-content: center;
 }
 
 .main {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .container {
@@ -18,6 +17,19 @@
     padding: 50px;
     background-color: #fff;
     border: 1px solid rgb(235, 235, 235);
+}
+
+.btn__switch {
+    padding: 5px;
+    border: 1.5px solid rgb(141, 139, 139);
+    margin-left: 50px;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.753);
+    transition: all .2s ease;
+}
+
+.btn__switch:hover {
+    background-color: rgb(209, 207, 207);
 }
 
 
