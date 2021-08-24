@@ -150,6 +150,7 @@
 @media (max-width: 990px) {
     .container {
         padding: 20px;
+        border: none;
     }
     .item__header-title,
     .item__header-icon {
