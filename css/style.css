@@ -12,7 +12,7 @@
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 50px;
     background-color: #fff;
@@ -31,7 +31,6 @@
 .btn__switch:hover {
     background-color: rgb(209, 207, 207);
 }
-
 
 .name__title {
     font-size: 50px;
@@ -97,7 +96,6 @@
     color: rgba(0, 0, 0, 0.753);
 }
 
-
 .item__title {
     padding: 5px;
     text-transform: uppercase;
@@ -118,7 +116,6 @@
 .item__link:hover {
     text-decoration: underline;
 }
-
 
 .contact__block {
     font-weight: 700;
@@ -146,4 +143,84 @@
     text-decoration: none;
     font-size: 30px;
     padding: 0 5px;
+}
+
+
+
+@media (max-width: 990px) {
+    .container {
+        padding: 20px;
+    }
+    .item__header-title,
+    .item__header-icon {
+        font-size: 22px;
+    }
+    .name__title {
+        font-size: 35px;
+    }
+    .item__title {
+        font-size: 14px;
+    }
+    .prof__title {
+        font-size: 14px;
+    }
+    .content__block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content__left {
+        width: 100%;
+        margin-right: 0;
+    }
+    .content__right {
+        width: 100%;
+    }
+    .contact__block {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .content__item {
+        width: 100%;
+    }
+    .contact__item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .item__header {
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    .contact__link--flex,
+    .contact__link {
+        margin-right: 15px;
+    }
+    .tel__links {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact__item {
+        flex-wrap: wrap;
+    }
+    .item__body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item__body--last {
+        margin-bottom: 10px;
+    }
+    .item__body-left {
+        width: 100%;
+        margin-right: 20px;
+    }
+    .item__body-right {
+        width: 100%;
+    }
+    .item__text {
+        margin-bottom: 15px;
+    }
 }
