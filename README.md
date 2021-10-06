@@ -1,7 +1,7 @@
 
 Iuliia Barankova, frontend developer
 
-Resume https://julvbar.github.io/
+Resume https://julvbar.github.io/Iuliia-Barankova-resume/
 
 Russian Federation, Saint-Petersburg, barankovauv@gmail.com.
 
