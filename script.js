@@ -1,6 +1,7 @@
 'use strict';
 
-const toggleLangBtn = document.querySelector('.switch__btn');
+const ruBtn = document.querySelector('#ru-lang');
+const enBtn = document.querySelector('#en-lang');
 const rusVersion = document.querySelectorAll('[data-lang="rus"]');
 const engVersion = document.querySelectorAll('[data-lang="eng"]');
 
@@ -11,24 +12,31 @@ rusVersion.forEach(item => {
 });
 
 engVersion.forEach(item => {
-    item.classList.add('non-active');
+    item.style.display = "none"
 });
 
 
-toggleLangBtn.addEventListener('click', () => {
+ruBtn.addEventListener('click', () => {
+    enBtn.classList.remove('active')
+    ruBtn.classList.add('active')
     rusVersion.forEach(item => {
-        item.classList.toggle('non-active');
-        item.classList.toggle('fade');
+        item.style.display = "block"
+        item.classList.add('fade');
     });
-    
     engVersion.forEach(item => {
-        item.classList.toggle('non-active');
-        item.classList.toggle('fade');
+        item.style.display = "none"
+        item.classList.remove('fade');
     });
-
-    if (toggleLangBtn.textContent == "English version") {
-        toggleLangBtn.textContent = "Русская версия";
-    } else {
-        toggleLangBtn.textContent = "English version";
-    }
+});
+enBtn.addEventListener('click', () => {
+    ruBtn.classList.remove('active')
+    enBtn.classList.add('active')
+    engVersion.forEach(item => {
+        item.classList.add('fade');
+        item.style.display = "block"
+    });
+    rusVersion.forEach(item => {
+        item.style.display = "none"
+        item.classList.remove('fade');
+    });
 });

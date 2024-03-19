@@ -3,20 +3,17 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="resume frontend junior developer Barankova Iuliia">
+    <meta name="description" content="resume frontend developer Barankova Iuliia">
     <meta name="keywords" content="resume frontend junior developer">
-
-    <script src="https://kit.fontawesome.com/9ca2acc967.js" crossorigin="anonymous"></script>
-
     <title>Баранкова Ю.В. резюме</title>
 </head>
 
@@ -25,25 +22,25 @@
 <div class="page">
 
     <div class="switch__wrap">
-        <div class="container container--ln"><button class="switch__btn" type="button">English version</button></div>
-        
+        <div class="container container--ln">
+            <div class="switch__btn">
+                <button id="ru-lang" class="active" type="button">RU</button>
+                <button id="en-lang" class="" type="button">EN</button>
+            </div>
+        </div>
     </div>
 
     <div class="container">
-
         <header class="header">
-            <h2 class="header__title" data-lang="rus">Юлия Баранкова</h2>
-            <h2 class="header__title" data-lang="eng">Iuliia Barankova</h2>
-            <div class="devider"></div>
-            <h1 class="header__subtitle">frontend developer</h1>
-            <div class="devider"></div>
+            <h1 class="header__title" data-lang="rus">Юлия Баранкова</h1>
+            <h1 class="header__title" data-lang="eng">Iuliia Barankova</h1>
+            <h2 class="header__subtitle">frontend developer</h2>
         </header>
 
         <main class="content">
-            <div class="content__column content__column--left left-side">
+            <div class="content__column content__column--left">
                 <div class="content__item">
                     <div class="content__header">
-                        <div class="content__icon"><i class="fas fa-mobile-alt"></i></div>
                         <h3 class="content__title" data-lang="rus">Контакты</h3>
                         <h3 class="content__title" data-lang="eng">Contacts</h3>
                     </div>
@@ -51,37 +48,51 @@
                     <div class="content__body">
                         <ul class="contact">
                             <li class="contact__item">
-                                <div class="contact__link" data-lang="rus">Адрес:</div>
-                                <div class="contact__link" data-lang="eng">Address:</div>
-                                <address class="contact__link" data-lang="rus">Российская Федерация, Санкт-Петербург</address>
-                                <address class="contact__link" data-lang="eng">Russian Federation, Saint-Petersburg</address>
+                                <address class="contact__link" data-lang="rus">г. Санкт-Петербург</address>
+                                <address class="contact__link" data-lang="rus">Российская Федерация</address>
+                                <address class="contact__link" data-lang="eng">Saint-Petersburg</address>
+                                <address class="contact__link" data-lang="eng">Russian Federation</address>
                             </li>
                             <li class="contact__item">
-                                <div class="contact__link" data-lang="rus">Телефон:</div>
-                                <a class="contact__link" href="tel:+79216517678">+7 921 651 7678</a>
-    
-                                <div>
-                                    <a class="contact__icon" href="https://api.whatsapp.com/send?phone=+79216517678" target="blank">
-                                        <i class="fab fa-whatsapp"></i> 
-                                    </a>
-                                    <a class="contact__icon" href="https://t.me/JulVBar" target="blank">
-                                        <i class="fab fa-telegram-plane"></i>
-                                    </a>
-                                </div>
+                                <ul class="contact__item-social-list">
+                                    <li>
+                                        <a class="contact__link" href="https://t.me/JulVBar">Telegram</a>
+                                    </li>
+                                    <li>
+                                        <a class="contact__link" href="https://api.whatsapp.com/send?phone=+79216517678"">WhatsApp</a>
+                                    </li>
+                                    <li>
+                                        <a class="contact__link" href="www.linkedin.com/in/юлия-баранкова-1b1873205">LinkedIn</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="contact__item">
-                                <a class="contact__link contact__link--flex" target="blank" href="https://www.linkedin.com/in/%D1%8E%D0%BB%D0%B8%D1%8F-%D0%B1%D0%B0%D1%80%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%B0-1b1873205/">
-                                    <i class="contact__icon fab fa-linkedin"></i>
-                                    <div class="contact__link">Iuliia Barankova</div>
-                                </a>
-                                <a class="contact__link contact__link--flex" target="blank" href="https://github.com/JulVBar">
-                                    <i class="contact__icon fab fa-github"></i>
-                                    <div class="contact__link">Iuliia Barankova</div>
-                                </a>
-                            </li>
-                            <li class="contact__item">
-                                <div class="contact__link">Email:</div>
-                                <a class="contact__link" href="mailto:barankovauv@gmail.com">barankovauv@gmail.com</a>
+                                <ul class="contact__item-list">
+                                    <li>
+                                        <a class="contact__link" href="tel:+79216517678">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.25 3C7.0166 3 6 4.0166 6 5.25V18.75C6 19.9834 7.0166 21 8.25 21H15.75C16.9834 21 18 19.9834 18 18.75V5.25C18 4.0166 16.9834 3 15.75 3H8.25ZM8.25 4.5H15.75C16.166 4.5 16.5 4.83398 16.5 5.25V18.75C16.5 19.166 16.166 19.5 15.75 19.5H8.25C7.83398 19.5 7.5 19.166 7.5 18.75V5.25C7.5 4.83398 7.83398 4.5 8.25 4.5ZM12 17.25C11.5869 17.25 11.25 17.5869 11.25 18C11.25 18.4131 11.5869 18.75 12 18.75C12.4131 18.75 12.75 18.4131 12.75 18C12.75 17.5869 12.4131 17.25 12 17.25Z" fill="#54595F"/>
+                                            </svg>
+                                            <span>8 921 651 76 78</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="contact__link" href="tel:+79216517678">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.1407 3C6.6182 2.91797 2.18559 7.86328 3.11723 13.5234C3.75004 17.3643 6.90238 20.3848 10.7579 20.9062C13.3565 21.2578 15.7852 20.5078 17.625 19.0312L16.6875 17.8594C15.1524 19.0898 13.1338 19.7256 10.9454 19.4297C7.75492 18.999 5.13871 16.4648 4.61723 13.2891C3.83207 8.51074 7.49418 4.43262 12.1172 4.5C16.0577 4.55859 19.3799 7.82519 19.5 11.7656C19.503 11.8506 19.5 11.9326 19.5 12.0234C19.4942 13.6758 18.1553 15 16.5 15C15.6621 15 15 14.3379 15 13.5V7.5H13.5V8.08594C12.961 7.71973 12.3194 7.5 11.625 7.5C9.77055 7.5 8.25004 9.02051 8.25004 10.875V13.125C8.25004 14.9795 9.77055 16.5 11.625 16.5C12.6358 16.5 13.5352 16.04 14.1563 15.3281C14.7071 16.0283 15.5479 16.5 16.5 16.5C18.9639 16.5 20.9913 14.4902 21 12.0234C21 11.9238 21.003 11.8271 21 11.7187C20.8565 6.9668 16.8926 3.07031 12.1407 3ZM11.625 9C12.668 9 13.5 9.83203 13.5 10.875V13.125C13.5 14.168 12.668 15 11.625 15C10.5821 15 9.75004 14.168 9.75004 13.125V10.875C9.75004 9.83203 10.5821 9 11.625 9Z" fill="#54595F"/>
+                                            </svg>
+                                            <span>barankovauv@gmail.com</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="contact__link" href="tel:+79216517678">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02832 3 3 7.02832 3 12C3 15.9756 5.57813 19.3506 9.15527 20.54C9.60645 20.6221 9.77051 20.3467 9.77051 20.1064C9.77051 19.8926 9.76172 19.3271 9.75879 18.5771C7.25391 19.1191 6.72656 17.3701 6.72656 17.3701C6.31641 16.3301 5.72754 16.0518 5.72754 16.0518C4.91016 15.4951 5.78906 15.5068 5.78906 15.5068C6.69141 15.5713 7.16602 16.4326 7.16602 16.4326C7.96875 17.8096 9.27246 17.4111 9.78516 17.1826C9.86719 16.5996 10.1016 16.2041 10.3564 15.9785C8.3584 15.7529 6.25781 14.9795 6.25781 11.5313C6.25781 10.5469 6.60938 9.74414 7.18359 9.11426C7.09277 8.88867 6.78223 7.97168 7.27149 6.73242C7.27149 6.73242 8.02734 6.49219 9.74707 7.65527C10.4648 7.45606 11.2354 7.35645 12 7.35352C12.7646 7.35645 13.5352 7.45606 14.2529 7.65527C15.9727 6.49219 16.7256 6.73242 16.7256 6.73242C17.2178 7.97168 16.9102 8.88867 16.8164 9.11426C17.3936 9.74414 17.7393 10.5469 17.7393 11.5313C17.7393 14.9883 15.6357 15.7471 13.6318 15.9727C13.9541 16.248 14.2412 16.7988 14.2412 17.6367C14.2412 18.8408 14.2324 19.8105 14.2324 20.1064C14.2324 20.3467 14.3936 20.6279 14.8506 20.54C18.4248 19.3477 21 15.9756 21 12C21 7.02832 16.9717 3 12 3Z" fill="#54595F"/>
+                                            </svg>
+                                            <span>https://github.com/JulVBar</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -94,39 +105,47 @@
                         <h3 class="content__title" data-lang="eng">Skills</h3>
                     </div>
 
-                    <div class="content__body">
+                    <div class="content__body skills">
                         <ul class="skills__list">
-                            <li class="skills__item">React</li>
-                            <li class="skills__item">Redux</li>
-                            <li class="skills__item">Redux toolkit</li>
-                            <li class="skills__item">Vue</li>
-                            <li class="skills__item">Vuex</li>
+                            <li class="skills__item">TypeScript</li>
                             <li class="skills__item">JavaScript</li>
+                            <li class="skills__item">Angular</li>
+                            <li class="skills__item">RXJS</li>
+                            <li class="skills__item">NgRX</li>
+                        </ul>
+                        <ul class="skills__list">
+                            <li class="skills__item">Keycloak</li>
                             <li class="skills__item">HTML 5</li>
                             <li class="skills__item">CSS 3</li>
                             <li class="skills__item">SASS</li>
-                            <li class="skills__item">jQuery</li>
-                            <li class="skills__item">Gulp</li>
-                            <li class="skills__item">Webpack</li>
-                            <li class="skills__item">Git</li>
-                            <li class="skills__item">Git Lab</li>
-                            <li class="skills__item">Npm</li>
-                            <li class="skills__item">Jira</li>
-                            <li class="skills__item">Unit Testing</li>
+                            <li class="skills__item">Ng Zorro</li>
+                        </ul>
+                        <ul class="skills__list">
+                            <li class="skills__item">Karma</li>
+                            <li class="skills__item">Jasmine</li>
+                            <li class="skills__item">React</li>
+                            <li class="skills__item">Redux</li>
+                            <li class="skills__item">Redux toolkit</li>
+                        </ul>
+                        <ul class="skills__list">
                             <li class="skills__item">Jest</li>
                             <li class="skills__item">Enzyme</li>
-                            <li class="skills__item">AJAX</li>
-                            <li class="skills__item">Object-oriented Programming</li>
-                            <li class="skills__item">Scrum</li>
-                            <li class="skills__item">Kanban</li>
-                            <li class="skills__item">Agile</li>
+                            <li class="skills__item">Vue</li>
+                            <li class="skills__item">Vuex</li>
+                            <li class="skills__item">jQuery</li>
+                        </ul>
+                        <ul class="skills__list">
+                            <li class="skills__item">WordPress</li>
+                            <li class="skills__item">Gulp</li>
+                            <li class="skills__item">Webpack</li>
+                            <li class="skills__item">Git, Git Lab</li>
+                            <li class="skills__item">Jira</li>
+                        </ul>
+                        <ul class="skills__list">
+                            <li class="skills__item">Confluence</li>
+                            <li class="skills__item">Agile SAFe</li>
                             <li class="skills__item">Adobe Photoshop CC</li>
                             <li class="skills__item">Figma</li>
-                            <li class="skills__item">Prototyping</li>
-                            <li class="skills__item">BEM Methodology</li>
-                            <li class="skills__item">Responsive/Adaptive web design</li>
-                            <li class="skills__item">Visual Design</li>
-                            <li class="skills__item">WordPress</li>
                         </ul>
                     </div>
                 </div>
@@ -145,127 +164,27 @@
                         <p data-lang="eng">English - CEFR B1+ Intermediate</p>
                     </div>
                 </div>
-
-                <div class="content__item">
-                    <div class="content__header">
-                        <div class="content__icon"><i class="far fa-address-card"></i></div>
-                        <h3 class="content__title" data-lang="rus">Обо мне</h3>
-                        <h3 class="content__title" data-lang="eng">About Me</h3>
-                    </div>
-
-                    <div class="content__body">
-                        <p data-lang="rus">Опыт работы в команде разработчиков приложения по методологии Agile. Работаю в условиях неполной информации и умею добывать информацию самостоятельно. Владею навыками деловой переписки, написания технического задания.</p>
-                        <p data-lang="eng">Have experience in team software development using Agile methodology. I know how to work with incomplete information and extract information on my own. I have the skills of business correspondence and writing  technical requirement.</p>
-                    </div>
-
-                </div> 
             </div> 
 
 
-            <div class="content__column right-side">
+            <div class="content__column">
                 <div class="content__item">
                     <div class="content__header">
-                        <div class="content__icon"><i class="fas fa-cubes"></i></div>
-                        <h3 class="content__title" data-lang="rus">Проекты</h3>
-                        <h3 class="content__title" data-lang="eng">Projects</h3>
+                        <h3 class="content__title" data-lang="rus">Профиль</h3>
+                        <h3 class="content__title" data-lang="eng">Profile</h3>
                     </div>
-
                     <div class="content__body">
-                        <ul class="info-block info-block--projects">
-                            <li class="info-block__item">
-                                <a class="info-block__link left-side" target="blank" href="https://julvbar.github.io/portfolio/" data-lang="rus">Портфолио</a>
-                                <a class="info-block__link left-side" target="blank" href="https://julvbar.github.io/portfolio/" data-lang="eng">Portfolio</a>
-                                <a class="info-block__link left-side" target="blank" href="https://julvbar.github.io/portfolio/">https://julvbar.github.io/portfolio/</a>
-                            </li>
-                        </ul>
-
-                        <ul class="info-block info-block--projects">
-                            <li class="info-block__item">
-                                <h4 class="info-block__title left-side">Pet project</h4>
-                                <h4 class="info-block__title right-side" data-lang="rus">Приложение Vue ReadBooks</h4>
-                                <h4 class="info-block__title right-side" data-lang="eng">Vue Application ReadBooks</h4>
-                            </li>
-    
-                            <li class="info-block__item">
-                                <div class="info-block__meta left-side">
-                                    <div class="info-block__date" data-lang="rus">Август 2022</div>
-                                    <div class="info-block__date" data-lang="eng">August 2022</div>
-                                    <a class="info-block__link" target="blank" href="https://julvbar.github.io/Book-App-Vue/">Deployment</a>
-                                    <a class="info-block__link" target="blank" href="https://github.com/JulVBar/Book-App-Vue">Github</a>
-                                </div>
-                                <p class="info-block__text right-side" data-lang="rus">Приложение для чтения книг онлайн на Vue. Основанно на проекте 'Project Gutenberg'. В приложении осуществлена возможность выбора по категориям, добавления в избранное, поиск по названию и автору, чтение книг онлайн.</p>
-                                <p class="info-block__text right-side" data-lang="eng">Reading Books online single-page application on Vue. Functionality: reading books online, add/remove to favourite, searching, category filtration.</p>
-                            </li>
-    
-                            <li class="info-block__item">
-                                <h4 class="info-block__title left-side" data-lang="rus">Технологии</h4>
-                                <h4 class="info-block__title left-side" data-lang="eng">Skills</h4>
-                                <p class="info-block__text right-side">Vue, Vuex, Vue Router, Axios, JavaScript, HTML5, SASS, Node JS, NPM, ESLINT, Webpack, Git, Git-pages</p>
-                            </li>
-                        </ul>
-
-                        <ul class="info-block info-block--projects">
-                            <li class="info-block__item">
-                                <h4 class="info-block__title left-side">Pet project</h4>
-                                <h4 class="info-block__title right-side" data-lang="rus">Приложение React JS Interface Styles</h4>
-                                <h4 class="info-block__title right-side" data-lang="eng">React JS Application Interface Styles</h4>
-                            </li>
-    
-                            <li class="info-block__item">
-                                <div class="info-block__meta left-side">
-                                    <div class="info-block__date" data-lang="rus">Май 2022</div>
-                                    <div class="info-block__date" data-lang="eng">May 2022</div>
-                                    <a class="info-block__link" target="blank" href="https://julvbar.github.io/InterfaceApp/">Deployment</a>
-                                    <a class="info-block__link" target="blank" href="https://github.com/JulVBar/InterfaceApp">Github</a>
-                                </div>
-                                <p class="info-block__text right-side" data-lang="rus">Приложение на React JS для подбора цветов и стиля интерфейса. Можно выбрать уже имеющуюся тему или создать и сохранить свою. Очень удобно при дизайне интерфейсов и сайтов.</p>
-                                <p class="info-block__text right-side" data-lang="eng">Application on React JS for designing and testing interface styles and themes. Functionality: user's theme creation, save/delete user's theme, choose colors and interface style, choose ready-made solutions.</p>
-                            </li>
-    
-                            <li class="info-block__item">
-                                <h4 class="info-block__title left-side" data-lang="rus">Технологии</h4>
-                                <h4 class="info-block__title left-side" data-lang="eng">Skills</h4>
-                                <p class="info-block__text right-side">React JS,  Redux, Redux Toolkit, React Popup, React DOM, Styled Components, JavaScript, Node JS, JSON, HTML5, SASS, NPM, ESLINT, Webpack, Git, Git-pages</p>
-                            </li>
-                        </ul>
-
-                        <ul class="info-block info-block--projects">
-                            <li class="info-block__item">
-                                <h4 class="info-block__title left-side">EPAM SYSTEMS</h4>
-                                <h4 class="info-block__title right-side" data-lang="rus">Приложение React JS</h4>
-                                <h4 class="info-block__title right-side" data-lang="eng">React JS Application</h4>
-                            </li>
-    
-                            <li class="info-block__item">
-                                <div class="info-block__meta left-side">
-                                    <div class="info-block__date" data-lang="rus">Апрель 2022</div>
-                                    <div class="info-block__date" data-lang="eng">April 2022</div>
-                                    <a class="info-block__link" target="blank" href="https://github.com/JulVBar/codeFragmentsHREventApp/tree/main">Github</a>
-                                </div>
-                                <p class="info-block__text right-side" data-lang="rus">Приложение для создания эвентов внутри комапании на React JS. Возможность создавать события разных типов для участников, удобный доступ к информации и получение обратной связи. Командная разработка.</p>
-                                <p class="info-block__text right-side" data-lang="eng">Application on React JS. A project to create a shared space for event creators and consumers to simplify event creation flow, enable easy access to information about all kinds of events and gather feedback for managers for future use. Team development.</p>
-                            </li>
-    
-                            <li class="info-block__item">
-                                <h4 class="info-block__title left-side" data-lang="rus">Технологии</h4>
-                                <h4 class="info-block__title left-side" data-lang="eng">Skills</h4>
-                                <p class="info-block__text right-side">React JS, JavaScript, Redux, Redux Toolkit, Redux Thunk, React router, Node JS, Jest, Enzyme, JSON, AJAX, HTML5, SASS, NPM, ESLINT, Bootstrap 4, Webpack, Git Lab, Jira</p>
-                            </li>
-                        </ul>
-
-                        <ul class="info-block info-block--projects">
-                            <li class="info-block__item">
-                                <a class="info-block__link left-side" target="blank" href="https://github.com/JulVBar?tab=repositories">Github repositories</a>
-                                <p class="info-block__text right-side" data-lang="rus">Больше проектов на Github</p>
-                                <p class="info-block__text right-side" data-lang="eng">More projects on Github</p>
-                            </li>
-                        </ul>
+                        <p data-lang="rus">
+                            Уже <b>более 3 лет</b> я занимаюсь веб-разработкой. Специализируюсь на front-end части веб-приложений на фреймворке <b>Angular</b>. Увлекаюсь <b>веб-дизайном</b> и разработкой сайтов, что помогает мне создавать user-friendly интерфейсы. Рисую свои макеты в <b>Figma</b>. Буду рада присоединиться к команде, где смогу внести свой вклад и продолжать расти как профессионал в области веб-разработки.
+                        </p>
+                        <p data-lang="eng">
+                            With <b>over 3 years</b> of experience, I specialize in web development, focusing on the front-end aspect of web applications using the <b>Angular</b> framework. I have a passion for <b>web design</b> and creating websites, which enables me to craft user-friendly interfaces. I also enjoy designing layouts using Figma. I'm excited to join a team where I can make a meaningful contribution and continue to grow as a professional in the field of web development.
+                        </p>
                     </div>
                 </div>
 
                 <div class="content__item">
                     <div class="content__header">
-                        <div class="content__icon"><i class="fas fa-briefcase"></i></div>
                         <h3 class="content__title" data-lang="rus">Опыт работы</h3>
                         <h3 class="content__title" data-lang="eng">Experience</h3>
                     </div>
@@ -273,94 +192,202 @@
                     <div class="content__body">
                         <ul class="info-block">
                             <li class="info-block__item">
-                                <h4 class="info-block__title left-side">EPAM SYSTEMS</h4>
-                                <h4 class="info-block__title right-side" data-lang="rus">Frontend developer trainee</h4>
-                                <h4 class="info-block__title right-side" data-lang="eng">Frontend developer Стажер</h4>
+                                <div class="info-block__col-left">
+                                    <h4 class="info-block__title" data-lang="rus">Высокие Цифровые Технологии, ООО</h4>
+                                    <h4 class="info-block__title" data-lang="eng">High Digital Technology</h4>
+                                    <div class="info-block__date" data-lang="rus">дек. 2022 - н.в</div>
+                                    <div class="info-block__date" data-lang="eng">dec 2022 - Present</div>
+                                    <a class="info-block__link" target="blank" href="https://hd-tech.ru/">www.hd-tech.ru</a>
+                                </div>
+                                <div class="info-block__col-right">
+                                    <h4 class="info-block__title mb6" data-lang="rus">Разработчик</h4>
+                                    <h4 class="info-block__title mb6" data-lang="eng">Frontend Developer</h4>
+                                    <ul class="info-block__list" data-lang="rus">
+                                        <li>Разработка фронт части Angular приложения "Конструктор", в котором проходит весь цикл создания страхового продукта из разных объектов - от создания справочников до согласования готового шаблона</li>
+                                        <li>Разработка фронт части Angular приложения каталога продукции</li>
+                                        <li>Поддержка приложения по обмену логами и скринами</li>
+                                        <li>Создание нового функционала на основе Angular UI библиотеки NG-ZORRO, поддержка кастомной библиотеки UI-компонентов</li>
+                                        <li>Оптимизация загрузки данных, рефакторинг кода, уcтранение утечек памяти</li>
+                                        <li>Сборка и развертывание проектов на платформе Marlin</li>
+                                        <li>Внедрение ролевой модели на основе Keycloak</li>
+                                        <li>Создание возможности работы с файлами, используя объектное хранилище MinIO</li>
+                                        <li>Диагностика и устранение дефектов</li>
+                                        <li>Разработка макетов и UI/UX компонентов в Figma</li> 
+                                        <li>Участие в оценке и проработке задач</li>
+                                        <li>Участие в командных мероприятиях в соответствии с методологией SAFe</li>        
+                                    </ul>
+                                    <ul class="info-block__list right-side" data-lang="eng">
+                                        <li>Development of the front-end part of the Angular application "Constructor", which encompasses the entire lifecycle of creating an insurance product from various components - from creating reference databases to finalizing the template</li>
+                                        <li>Development of the front-end part of the Angular application for a product catalog</li>
+                                        <li>Support application for exchange logs and screens</li>
+                                        <li>Implementing new functionality based on the Angular UI library NG-ZORRO, supporting a custom UI component library</li>
+                                        <li>Optimizing data loading, refactoring code, and eliminating memory leaks</li>
+                                        <li>Building and deploying projects on the Marlin platform</li>
+                                        <li>Implementing a role-based model based on Keycloak</li>
+                                        <li>Creating the ability to work with files using the MinIO object storage</li>
+                                        <li>Diagnosing and resolving defects</li>
+                                        <li>Designing layouts and UI/UX components in Figma</li>
+                                        <li>Participating in task estimation and analysis</li>
+                                        <li>Participating in team events according to SAFe methodology</li>
+                                    </ul>
+                                </div> 
                             </li>
                             <li class="info-block__item">
-                                <h4 class="info-block__title left-side"></h4>
-                                <a class="info-block__link left-side" target="blank" href="certificate.pdf">Certificate</a>
+                                <div class="info-block__col-left">
+                                    <h4 class="info-block__title" data-lang="rus">Стек технологий</h4>
+                                    <h4 class="info-block__title" data-lang="eng">Stack</h4>    
+                                </div>
+                                <div class="info-block__col-right">
+                                    <p class="info-block__text">JavaScript, TypeScript, Angular, RXJS, NgRX, HTML5, SASS, Keycloak, Marlin, Atlassian Confluence, RestAPI, Webpack, Git Lab, Linux, WSL, Jira, Figma</p>
+                                </div>
                             </li>
                             <li class="info-block__item">
-                                <div class="info-block__date left-side" data-lang="rus">2022 март - май 2022</div>
-                                <div class="info-block__date left-side" data-lang="eng">2022 march - may 2022</div>
-                                <p class="info-block__text right-side" data-lang="rus"><U>Обязанности</U>: 
-                                    <br>- разработка нового функционала
-                                    <br>- исправление багов
-                                    <br>- рефакторинг кода
-                                    <br>- unit-тестирование
-                                    <br>- код ревью коллег
-                                    <br>- взаимодестйвие с backend и frontend командами
-                                    <br>- участие в активностях: ежедневные встречи, обсуждение проекта с бизнес-аналитиком, UI/UX дезайнерами
-                                    <br>- итоговая презентация готового продукта
-                                    <br><U>Команда:</U> 12 Backend разработчиков, 5 Frontend разработчиков, Проектный Менеджер, Бизнес Аналитик, UI/UX Дезайнер</p>
-                                <p class="info-block__text right-side" data-lang="eng"><U>Responsibilities</U>:
-                                    <br>- developing new features
-                                    <br>- fixing bugs
-                                    <br>- refactoring of existing codebase
-                                    <br>- writing and fixing unit-tests
-                                    <br>- code-reviews of colleagues's merge requests
-                                    <br>- negotiation with backend and frontend team
-                                    <br>- participating in project activities: daily meetings, project discussions with Business Analyst, UI/UX Designer
-                                    <br>- product presenation
-                                    <br><U>Team:</U> 12 Backend developers, 5 Frontend developers, Project Manager, Business Analyst, UI/UX Designer</p>
-                            </li>
-                        </ul>
-                        <ul class="info-block">
-                            <li class="info-block__item">
-                                <h4 class="info-block__title left-side" data-lang="rus">ООО "Периметр"</h4>
-                                <h4 class="info-block__title left-side" data-lang="eng">"Perimetr"</h4>
-                                <h4 class="info-block__title right-side" data-lang="rus">Веб-разработчик стажер</h4>
-                                <h4 class="info-block__title right-side" data-lang="eng">Web developer trainee</h4>
-                                
-                            </li>
-                            <li class="info-block__item">
-                                <div class="info-block__date left-side" data-lang="rus">2021 ноябрь - февраль 2022</div>
-                                <div class="info-block__date left-side" data-lang="eng">2021 november - february 2022</div>
-                                <p class="info-block__text right-side" data-lang="rus"><U>Обязанности</U>: работа над несколькими проектами в режиме многозадачности, устранение проблем, разработка и поддержка сайтов, подготовка исходников, макетов, прототипов. Вёрстка страниц и элементов по дизайн-макету. Интеграция в CMS WordPress.</p>
-                                <p class="info-block__text right-side" data-lang="eng"><U>Responsibilities</U>: working on several projects on a time, troubleshooting, developing and maintaining websites, preparing source code, building prototypes. Bringing mock-ups to life using HTML, CSS, JavaScript. Integration and support using CMS WordPress. </p>  
-                            </li>
-                        </ul>
-                        <ul class="info-block">
-                            <li class="info-block__item">
-                                <h4 class="info-block__title left-side" data-lang="rus">СпБ ГБУЗ "Госпиталь для ветеранов войн"</h4>
-                                <h4 class="info-block__title left-side" data-lang="eng">Spb GBUZ "Gospital veteranov voin"</h4>
-                                <h4 class="info-block__title right-side" data-lang="rus">Экономист отдела контрактной службы по государственным закупкам</h4>
-                                <h4 class="info-block__title right-side" data-lang="eng">Government procurement specialist</h4>
-                                
-                            </li>
-                            <li class="info-block__item">
-                                <div class="info-block__date left-side" data-lang="rus">2018 - 2021 (4 года)</div>
-                                <div class="info-block__date left-side" data-lang="eng">2018 - 2021 (4 years)</div>
-                                <p class="info-block__text right-side" data-lang="rus"><U>Обязанности</U>:
-                                    ведение, исполнение, расторжение государственных контрактов в системах ЕИС и АИС ГЗ. Составление технического задания, решение вопросов с технической поддержкой. <br>
-                                <U>Достижения:</U>
-                                    оптимизировала систему документооборота и отслеживания этапов исполнения контрактов, что позволило своевременно публиковать документацию, закрывать контракты и уменьшить количество штрафов на 95%.</p>
-                                    <p class="info-block__text right-side" data-lang="eng"><U>Responsibilities</U>:
-                                        proofread, edit, and rewrite elements of procurement documents. Formulating the terms of reference, resolving the issues with technical support. <br>
-                                    <U>Achievements:</U>
-                                    streamlined the workflow and contract milestone tracking system, which allowed for the timely issuance of documents, contract close-out and decrease the avoidance of penalties on 95%.</p>
+                                <div class="info-block__col-left">
+                                    <h4 class="info-block__title" data-lang="rus">Достижения</h4>
+                                    <h4 class="info-block__title" data-lang="eng">Achievements</h4>
+                                    <a class="info-block__link left-side" target="blank" href="diploma.pdf">Diploma</a>    
+                                </div>
+                                <div class="info-block__col-right">
+                                    <h4 class="info-block__title mb6" data-lang="rus">Серебряный призер Хакатона ВСК 2023</h4>
+                                    <h4 class="info-block__title mb6" data-lang="eng">Silver medalist Khakaton VSK 2023</h4>
+                                    <p class="info-block__text" data-lang="rus">В рамках конкурса было разработано приложение по обмену логами и скринами внутри компании, обеспечивающее безопасность передачи информации с применением HTML, CSS, JavaScript, Marlin, Figma</p>
+                                    <p class="info-block__text" data-lang="eng">As part of the competition, an application was developed for exchanging logs and screenshots within the company, ensuring the secure transmission of information using HTML, CSS, JavaScript, Marlin, and Figma</p>
+                                </div>
                             </li>
                         </ul>
                         <ul class="info-block">
                             <li class="info-block__item">
-                                <h4 class="info-block__title left-side" data-lang="rus">СпБ ГБУЗ "Госпиталь для ветеранов войн"</h4>
-                                <h4 class="info-block__title left-side" data-lang="eng">Spb GBUZ "Gospital veteranov voin"</h4>
-                                <h4 class="info-block__title right-side" data-lang="rus">Экономист</h4>
-                                <h4 class="info-block__title right-side" data-lang="eng">Economist</h4>
-                                
+                                <div class="info-block__col-left">
+                                    <h4 class="info-block__title" data-lang="rus">Страховой дом ВСК, САО</h4>
+                                    <h4 class="info-block__title" data-lang="eng">VSK</h4>
+                                    <span class="info-block__date" data-lang="rus">сент. 2022 - нояб. 2023 <br>(1 год 2 мес.)</span>
+                                    <span class="info-block__date" data-lang="eng">sept 2022 - nov 2023 <br>(1 year 2 months)</span>
+                                </div>
+                                <div class="info-block__col-right">
+                                    <h4 class="info-block__title mb6" data-lang="rus">Младший разработчик</h4>
+                                    <h4 class="info-block__title mb6" data-lang="eng">Junior Frontend Developer</h4>
+                                    <ul class="info-block__list" data-lang="rus">
+                                        <li>Разработка фронт части Angular приложений "Конструктор" и "Каталог продуктов"</li>
+                                        <li>Создание нового функционала и поддержка кастомной библиотеки UI-компонентов</li>
+                                        <li>Внедрение ролевой модели на основе Keycloak</li>
+                                        <li>Создание возможности работы с файлами, используя объектное хранилище MinIO</li>
+                                        <li>Диагностика и устранение дефектов</li>
+                                        <li>Участие в оценке и проработке задач</li>
+                                        <li>Участие в командных мероприятиях в соответствии с методологией SAFe</li>        
+                                    </ul>
+                                    <ul class="info-block__list" data-lang="eng">
+                                        <li>Development of the front-end part of the Angular application "Constructor" and "Product Catalog"</li>
+                                        <li>Implementing new functionality and supporting a custom UI component library</li>
+                                        <li>Implementing a role-based model based on Keycloak</li>
+                                        <li>Creating the ability to work with files using the MinIO object storage</li>
+                                        <li>Diagnosing and resolving defects</li>
+                                        <li>Participating in task estimation and analysis</li>
+                                        <li>Participating in team events according to SAFe methodology</li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="info-block__item">
-                                <div class="info-block__date left-side" data-lang="rus">2010 - 2018 (8 лет)</div>
-                                <div class="info-block__date left-side" data-lang="eng">2010 - 2018 (8 years)</div>
-                                <p class="info-block__text right-side" data-lang="rus"><U>Обязанности</U>:
-                                    составление финансового плана, ведение  тарификации, отчетной документации, калькуляций, деловая переписка <br>
-                                <U>Достижения:</U>
-                                собрала требования к API медицинской программы "Авиценна", что позволило ускорить процесс ее разработки в 2 раза. Провела оценку рентабельности платных услуг, разработала новую систему и документацию по распределению средств, что позволило мотивировать работников для оказания платной мед. помощи и повысить доход организации в 4 раза.</p>
-                                <p class="info-block__text right-side" data-lang="eng"><U>Responsibilities</U>:
-                                    statistical and economic analyses, cost calculation, developing financial plan, improving profitability. <br>
-                                <U>Achievements:</U>
-                                requirements for the API medical program "Avicenna" were collected, which allowed to accelerate the process of its development in 2 times. Cost-effectiveness of paid services assessed, new distribution system and documentation developed, which motivated workers for assistance of private medical care and the organization’s income increase 4 times.</p>
+                                <div class="info-block__col-left">
+                                    <h4 class="info-block__title" data-lang="rus">Стек технологий</h4>
+                                    <h4 class="info-block__title" data-lang="eng">Stack</h4>    
+                                </div>
+                                <div class="info-block__col-right">
+                                    <p class="info-block__text">JavaScript, TypeScript, Angular, RXJS, NgRX, HTML5, SASS, Keycloak, Marlin, Atlassian Confluence, RestAPI, Webpack, Git Lab, Linux, WSL, Jira, Figma</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="info-block">
+                            <li class="info-block__item">
+                                <div class="info-block__col-left">
+                                    <h4 class="info-block__title">EPAM Systems Inc.</h4>
+                                    <span class="info-block__date" data-lang="rus">март 2022 - май 2022</span>
+                                    <span class="info-block__date" data-lang="eng">march 2022 - may 2022</span>
+                                    <br>
+                                    <a class="info-block__link" target="blank" href="certificate.pdf">Certificate</a>
+                                </div>
+                                <div class="info-block__col-right">
+                                    <h4 class="info-block__title mb6" data-lang="rus">Frontend developer trainee</h4>
+                                    <h4 class="info-block__title mb6" data-lang="eng">Frontend developer Стажер</h4>
+                                    <ul class="info-block__list right-side" data-lang="rus">
+                                        <li>
+                                            Разработка React JS приложения HR Event, которое позволяет создавать или подписываться на любое событие внутри компании. Цель приложения - упростить процесс создания событий, обеспечить легкий доступ к информации о всех видах событий и собирать отзывы для менеджеров для будущего использования
+                                        </li>
+                                        <li>
+                                            Разработка сложных форм с применением Formik
+                                        </li>
+                                        <li>
+                                            Диагностика и устранения багов кастомной библиотеки UI-компонентов
+                                        </li>
+                                        <li>
+                                            Покрытие кода юнит-тестами на Jest, Enzyme
+                                        </li>
+                                        <li>Участие в код ревью</li>
+                                        <li>Презентация продукта бизнес-заказчику</li>
+                                        <li>Участие в командных мероприятиях в соответствии с методологией SAFe</li>        
+                                    </ul>
+                                    <ul class="info-block__list right-side" data-lang="eng">
+                                        <li>
+                                            HR Event - React JS App to create a shared space for event creators and consumers to simplify event creation flow, enable easy access to information about all kinds of events and gather feedback for managers for future use.
+                                        </li>
+                                        <li>
+                                            Complex forms development with Formik
+                                        </li>
+                                        <li>
+                                            Custom UI components library bugfixing
+                                        </li>
+                                        <li>
+                                            Unit test with Jest, Enzyme
+                                        </li>
+                                        <li>Code review</li>
+                                        <li>Product presentation to business owner</li>
+                                        <li>Participation in team events according to SAFe methodology</li>  
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="info-block__item">
+                                <div class="info-block__col-left">
+                                    <h4 class="info-block__title" data-lang="rus">Стек технологий</h4>
+                                    <h4 class="info-block__title" data-lang="eng">Stack</h4>    
+                                </div>
+                                <div class="info-block__col-right">
+                                    <p class="info-block__text">JavaScript, React JS, Redux, Redux Toolkit, Redux Thunk, React router, Jest, Enzyme, HTML5, SASS, Bootstrap 4, Webpack, Git Lab, Jira</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="info-block">
+                            <li class="info-block__item">
+                                <div class="info-block__col-left">
+                                    <h4 class="info-block__title" data-lang="rus">СПБ ГБУЗ "Госпиталь для ветеранов войн"</h4>
+                                    <h4 class="info-block__title" data-lang="eng">SPB GBUZ "Gospital veteranov voin"</h4>
+                                    <span class="info-block__date" data-lang="rus">2010 - 2021 (11 лет)</span>
+                                    <span class="info-block__date" data-lang="eng">2010 - 2021 (11 years)</span>
+                                </div>
+                                <div class="info-block__col-right">
+                                    <h4 class="info-block__title mb6" data-lang="rus">Экономист</h4>
+                                    <h4 class="info-block__title mb6" data-lang="eng">Economist</h4>
+                                    <ul class="info-block__list" data-lang="rus">
+                                        <li>
+                                            Составление финансового плана, ведение  тарификации, отчетной документации, калькуляций, деловая переписка
+                                        </li>
+                                        <li>
+                                            Ведение, исполнение, расторжение государственных контрактов в системах ЕИС и АИС ГЗ
+                                        </li>
+                                        <li>
+                                            Составление технического задания, решение вопросов с технической поддержкой
+                                        </li>        
+                                    </ul>
+                                    <ul class="info-block__list" data-lang="eng">
+                                        <li>
+                                            Statistical and economic analyses, cost calculation, developing financial plan, improving profitability
+                                        </li>
+                                        <li>
+                                            Proofread, edit, and rewrite elements of procurement documents
+                                        </li>
+                                        <li>
+                                            Formulating the terms of reference, resolving the issues with technical support
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -376,34 +403,37 @@
                     <div class="content__body">
                         <ul class="info-block">
                             <li class="info-block__item">
-                                <h4 class="info-block__title left-side" data-lang="rus">Udemy онлайн академия</h4>
-                                <h4 class="info-block__title left-side" data-lang="eng">Udemy online academy</h4>
-                                <h4 class="info-block__title right-side" data-lang="rus">JavaScript полный курс</h4>
-                                <h4 class="info-block__title right-side" data-lang="eng">JavaScript full course</h4>
+                                <div class="info-block__col-left">
+                                    <h4 class="info-block__title mb6" data-lang="rus">Udemy онлайн академия</h4>
+                                    <h4 class="info-block__title mb6" data-lang="eng">Udemy online academy</h4>
+                                    <div class="info-block__date">2021</div>
+                                </div>
+                                <div class="info-block__col-right">
+                                    <h4 class="info-block__title mb6" data-lang="rus">JavaScript полный курс</h4>
+                                    <h4 class="info-block__title mb6" data-lang="eng">JavaScript full course</h4>
+                                    <p class="info-block__text" data-lang="rus">JavaScript курс от Ивана Петриченко. Изученные технологии: React, Redux, JavaScript, webpack, npm, local hosting, AJAX, JSON, Git, Babel, Browserify</p>
+                                    <p class="info-block__text" data-lang="eng">JavaScript course by Ivan Petrichenko. Technologies: React, Redux, JavaScript, webpack, npm, local hosting, AJAX, JSON, Git, Babel, Browserify.</p>
+                                </div>
                                 
-                            </li>
-                            <li class="info-block__item">
-                                <div class="info-block__date left-side">2021</div>
-                                <p class="info-block__text right-side" data-lang="rus">JavaScript курс от Ивана Петриченко. Изученные технологии: React, Redux, JavaScript, webpack, npm, local hosting, AJAX, JSON, Git, Babel, Browserify</p>
-                                <p class="info-block__text right-side" data-lang="eng">JavaScript course by Ivan Petrichenko. Technologies: React, Redux, JavaScript, webpack, npm, local hosting, AJAX, JSON, Git, Babel, Browserify.</p>
                             </li>
                         </ul>
                         <ul class="info-block">
                             <li class="info-block__item">
-                                <h4 class="info-block__title left-side" data-lang="rus">СПБ ГАСУ: Высшее</h4>
-                                <h4 class="info-block__title left-side" data-lang="eng">Spb GASU</h4>
-                                <h4 class="info-block__title right-side" data-lang="rus">Санкт-Петербургский государственный архитектурно-строительный университет</h4>
-                                <h4 class="info-block__title right-side" data-lang="eng">Saint Petersburg State University of Architecture and Civil Engineering</h4>
-                                
-                            </li>
-                            <li class="info-block__item">
-                                <div class="info-block__date left-side">2012</div>
-                                <p class="info-block__text right-side" data-lang="rus">
-                                    Факультет экономики и управления <br>
-                                    Экономист-менеджер на предприятии строительства</p>
+                                <div class="info-block__col-left">
+                                    <h4 class="info-block__title mb6" data-lang="rus">СПБ ГАСУ: Высшее</h4>
+                                    <h4 class="info-block__title mb6" data-lang="eng">Spb GASU</h4>
+                                    <div class="info-block__date">2012</div>
+                                </div>
+                                <div class="info-block__col-right">
+                                    <h4 class="info-block__title mb6" data-lang="rus">Санкт-Петербургский государственный архитектурно-строительный университет</h4>
+                                    <h4 class="info-block__title mb6" data-lang="eng">Saint Petersburg State University of Architecture and Civil Engineering</h4>
+                                    <p class="info-block__text right-side" data-lang="rus">
+                                        Факультет экономики и управления <br>
+                                        Экономист-менеджер на предприятии строительства</p>
                                     <p class="info-block__text right-side" data-lang="eng">
                                         Faculty of Economics and Management <br>
                                         Specialist in Economics and management in construction area</p>
+                                </div>
                             </li>
                         </ul>
                     </div>
